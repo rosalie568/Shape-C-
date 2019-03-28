@@ -1,2 +1,2 @@
 ﻿  main.cpp
-c:\users\kitty\source\repos\shapeclass\rectangle.h(2): fatal error C1014: too many include files: depth = 1024
+c:\users\kitty\source\repos\shapeclass\main.cpp(37): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?

@@ -1,9 +1,6 @@
-#include "pch.h"
-#include "rectangle.h"
+
 #include "Shape.h"
-#include "Square.h"
-#include <iostream>
-using namespace std;
+#include "rectangle.h"
 
 class Square : public Rectangle {
 	private:

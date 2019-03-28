@@ -1,9 +1,11 @@
-#include "pch.h"
-#include "rectangle.h"
+#ifndef RECTANGLE_H
+#define RECTANGLE_H
+
 #include "Shape.h"
 #include "Square.h"
 #include <iostream>
-using namespace std;
+
+
 
 class Rectangle : public Shape {
 
@@ -35,3 +37,5 @@ int Rectangle::getArea() {
 int Rectangle::getPerimeter() {
 	return 2*(width + length);
 }
+
+#endif

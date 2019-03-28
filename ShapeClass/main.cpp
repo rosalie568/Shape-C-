@@ -1,6 +1,5 @@
-
 //Practice creating classes
-#include "pch.h"
+
 #include "rectangle.h"
 #include "Shape.h"
 #include "Square.h"
@@ -10,7 +9,7 @@ using namespace std;
 int main()
 {
 	//creating data values
-	int length, width, perimeter;
+	int length = 0, width = 0 , perimeter = 0;
 
 	cout << "Enter a length" << endl;
 	cin >> length;
@@ -18,17 +17,20 @@ int main()
 	cin >> width;
 	cout << "Width: " << width << "  Length: " << length << endl;
 
-	Rectangle r(length, width);
-	Square s;
-
 	//check to see if length and width are the same
-	if (length == width)
-		Square s(length);
-
-	//set values for classes
-	perimeter = s.getPerimeter();
-
+	if (length == width) {
+		//Square s(length);
+		//perimeter = s.getPerimeter();
+		cout << endl << "Shape is square " << endl;
+		cout << "Perimeter:  " << perimeter << endl << endl;
+	}
+	else {
+	
+//	Rectangle r(length, width);
+//	perimeter = r.getPerimeter();
+	cout << endl << "Shape is rectangle " << endl;
 	cout << "Perimeter:  " << perimeter << endl << endl;
+	
+	}
 
-	return 0;
 }

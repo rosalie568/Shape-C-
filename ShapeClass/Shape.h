@@ -1,10 +1,6 @@
 //Shape class
-#include "pch.h"
-#include "rectangle.h"
-#include "Shape.h"
-#include "Square.h"
-#include <iostream>
-using namespace std;
+#ifndef SHAPE_H
+#define SHAPE_H
 
 class Shape
 {
@@ -17,7 +13,7 @@ class Shape
 		
 };
 
-Shape::Shape(){
+Shape::Shape() {
 	area = 0;
 	perimeter = 0;
 }
@@ -27,3 +23,4 @@ int Shape::getArea() {
 }
 
 
+#endif
