@@ -1,13 +1,24 @@
+#include "pch.h"
+#include "rectangle.h"
+#include "Shape.h"
+#include "Square.h"
+#include <iostream>
+using namespace std;
 
-class Square {
+class Square : public Rectangle {
 	private:
-		int side, perimeter;
+		int side;
 
 	public:
-		Square() {
-			side = 0;
-			perimeter = 0;
-		}
-
-		Square(int x) { side = x; }
+		Square(int x);
+		Square();
+		
 };
+
+Square::Square() {
+	side = 0;
+}
+
+Square::Square(int x) {
+	Rectangle(x, x);
+}

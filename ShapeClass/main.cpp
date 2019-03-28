@@ -10,21 +10,25 @@ using namespace std;
 int main()
 {
 	//creating data values
-	int length, width;
-	Rectangle r;
-	//Square s;
+	int length, width, perimeter;
 
-	cout << "\n Enter a length\n";
+	cout << "Enter a length" << endl;
 	cin >> length;
-	cout << "Enter a width\n";
+	cout << endl << "Enter a width" << endl;
 	cin >> width;
 	cout << "Width: " << width << "  Length: " << length << endl;
 
+	Rectangle r(length, width);
+	Square s;
+
 	//check to see if length and width are the same
 	if (length == width)
-		;
+		Square s(length);
 
 	//set values for classes
+	perimeter = s.getPerimeter();
 
+	cout << "Perimeter:  " << perimeter << endl << endl;
 
+	return 0;
 }

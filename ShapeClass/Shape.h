@@ -1,20 +1,29 @@
 //Shape class
+#include "pch.h"
+#include "rectangle.h"
+#include "Shape.h"
+#include "Square.h"
+#include <iostream>
+using namespace std;
 
 class Shape
 {
 	private:
-		int length, width, perimeter;
+		int area, perimeter;
 
 	public:
-		Shape(int x, int y) {
-			length = x;
-			width = y;
-		}
-
-		void getPerimeter();
-
-		void draw();
+		Shape();
+		int getArea();
 		
 };
+
+Shape::Shape(){
+	area = 0;
+	perimeter = 0;
+}
+
+int Shape::getArea() {
+	return area;
+}
 
 
